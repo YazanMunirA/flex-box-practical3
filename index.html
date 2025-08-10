@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-bottom: 20px;  }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    body{
+      background-color: hsl(30, 38%, 92%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .container{
+      /* padding: 20px; */
+      background-color: white;
+      display: flex;
+      max-width: 600px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+    .container img{
+      width: 50%;  /* width for desktop */
+      object-fit: cover;
+    }
+    .card2{
+      display: flex;
+      padding: 25px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h4{
+      color: hsl(228, 12%, 48%);
+      margin-bottom: 15px;
+      letter-spacing: 5px;
+      font-size: 14px;
+    }
+    h3{
+      font-size: 26px;
+      font-weight: 600px;
+      margin-bottom: 15px;
+      color: hsl(212, 21%, 14%);
+    }
+
+    .description{
+      margin-bottom: 15px;
+      color:hsl(228, 12%, 48%);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .price-box{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px;
+    }
+    .current-price{
+      font-size: 26px;
+      font-weight: 700px;
+      color: hsl(158, 36%, 37%);
+    }
+    .old-price{
+      text-decoration: line-through;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .add-card{
+      display: flex;
+      background-color:hsl(158, 36%, 37%) ;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: 700;
+      color: white;
+      justify-content: center;
+    }
+
+    @media (max-width:375px){
+      .container{
+        flex-direction: column;
+      }
+      .container img{
+        width: 100%;
+      }
+    }
+
+    
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yazan Al Bachan</a>.
+  </div>
+  <div class="container">
+    <img src="./images/image-product-desktop.jpg" alt="">
+    <div class="card2">
+      <h4>PERFUME</h4>
+      <h3>Gabrielle Essence Eau De Parfum</h3>
+      <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+        <div class="price-box">
+          <span class="current-price">$149.99</span>
+          <span class="old-price">$169.99</span>
+        </div>
+        <div class="add-card">
+          <h5>🛒 Add to Cart</h5>
+        </div>
+    </div>
+
+    
+  </div>
+
+  
+</body>
+</html>
+
+
+  <!-- Perfume
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart
+   -->
